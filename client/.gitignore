@@ -50,3 +50,6 @@ Thumbs.db
 
 # yarn
 *.lock
+
+# moralis
+frp_0.36.2_darwin_amd64/
