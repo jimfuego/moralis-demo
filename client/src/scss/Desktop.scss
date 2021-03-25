@@ -1,0 +1,53 @@
+$nav-padding: 250px;
+$brand-height: 150px;
+$heading-style: 'Chivo',
+sans-serif;
+$content-side-padding: 200px;
+
+@media (min-width: 992px) {
+
+  // Popup.jsx
+  .popup-x {
+    padding-left: 660px;
+    padding-top : 10px;
+  }
+
+  .btn-accept-offer {
+    padding-top: 50px;
+  }
+
+  // Navbar.jsx
+  .n {
+    width: $nav-padding;
+    .nav-links{
+      padding-top: 250px;
+    }
+    a {
+      // text-decoration: none;
+      font-size      : 25px;
+      display        : block;
+      transition     : 0.3s;
+    }
+
+    img {
+      height: $brand-height;
+      width: $nav-padding;
+    }
+
+    height        : 100%;
+    // width: 0; /* 0 width - change this with JavaScript */
+    position      : fixed;
+    z-index       : 1;
+    top           : 0;
+    left          : 0;
+    overflow-x    : hidden;
+    // padding-top: 60px; /* Place content 60px from the top */
+    transition    : 0.5s;
+  }
+
+  // Profile.jsx
+  .profile-content{
+    margin-left: $nav-padding;
+  }
+
+}

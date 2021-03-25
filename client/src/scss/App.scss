@@ -1,0 +1,200 @@
+// "Crossten ExtraBold",lato;
+$base-font-family: 'Lato',
+sans-serif;
+$heading-family: 'PT Sans',
+sans-serif;
+$prompt-text-family: 'Prompt',
+sans-serif;
+$inter: 'Inter',
+sans-serif;
+$heading-style : 'normal';
+$heading-weight: 700;
+$text-weight   : 400;
+$base-color    : #ffffff;
+$sh-blue       : #1B3D6C;
+
+.blue-text {
+  // p,
+  // td,
+  // tr {
+  color: $sh-blue;
+  // }
+}
+
+body {
+  background-color: $base-color;
+  overflow-x      : hidden;
+}
+
+.App {
+  // text-align      : center;
+  background-color: $base-color;
+}
+
+.App-logo {
+  height        : 40vmin;
+  pointer-events: none;
+}
+
+// General
+p,
+td {
+  color      : black;
+  font-family: $inter;
+  font-weight: $text-weight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color      : black;
+  font-family: $heading-family;
+  font-style : $heading-style;
+  font-weight: $heading-weight;
+}
+
+.card {
+  // border-radius: 5px;
+}
+
+.card-text,
+.card-title {
+  color: black;
+}
+
+.app-center {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+}
+
+.h-divider {
+  margin-top   : 190px;
+  margin-bottom: 5px;
+  height       : 10px;
+  border-top   : 1px solid gray;
+  margin-left  : 100px;
+  margin-right : 100px;
+}
+
+// Navigation
+.nav-brand {
+  // width: 20vmin;
+}
+
+.nav-item {
+  font-family: $heading-style;
+  font-weight: 600;
+}
+
+// .navbar {
+//   position  : sticky;
+//   top       : 0;
+//   background: $base-color;
+//   height    : 140px;
+// }
+
+// Popup.jsx
+.popup {
+  position        : fixed;
+  width           : 100%;
+  height          : 100%;
+  top             : 0;
+  left            : 0;
+  right           : 0;
+  bottom          : 0;
+  margin          : auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition-delay: 1s;
+}
+
+.popup_inner {
+
+  .popup-content {
+    margin-left : 50px;
+    margin-right: 50px;
+  }
+
+  height       : 800px;
+  position     : absolute;
+  left         : 25%;
+  right        : 25%;
+  top          : 25%;
+  bottom       : 25%;
+  margin       : auto;
+  border-radius: 20px;
+  background   : white;
+}
+
+.offer-heading {
+  font-size: 10px;
+}
+
+// Identifier.jsx
+.id-greeting {
+  font-weight: 300;
+}
+
+.id-name {
+  font-weight: 600;
+}
+
+.user-identifier {
+  padding-top      : 35px;
+  // padding-bottom: 60px;
+  background       : $sh-blue;
+  min-width        : 100%;
+  height           : 150px;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h5 {
+    font-size  : 20px;
+    font-family: $base-font-family;
+    font-weight: 1000;
+    color      : $base-color;
+  }
+}
+
+// Profile.jsx
+.profile-content {
+  // margin-top: -50px;
+}
+
+// Navbar.jsx
+.n {
+  a {
+    color: $base-color;
+    text-decoration: none;
+  }
+  a:hover{
+    color: grey;
+  }
+  img {
+    height: 100px;
+  }
+  background: $sh-blue;
+}
+
+// Login.jsx
+.LoginForm {
+  display       : flex;
+  flex-direction: column;
+  width         : 200px;
+  align-items   : center;
+  margin-left   : 40%;
+  border        : 10px solid darkblue;
+}
+
+// AddCandidate.jsx
+.input-group-text{
+  width: 120px;
+}
