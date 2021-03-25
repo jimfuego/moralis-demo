@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './Navbar';
+import Home from './Home';
 
 export default function Nav() {
   const [token, setToken] = useState('')
@@ -26,7 +27,7 @@ export default function Nav() {
           </Route>
           <Route path='/'>
             {/* <Login /> */}
-            <p>login/home page</p>
+            <Home />
           </Route>
         </Switch>
       </div>
